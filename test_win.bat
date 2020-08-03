@@ -1,5 +1,7 @@
 @echo off
 
+set "PATH=C:\Program Files\NASM;C:\Program Files\LLVM\bin;%PATH%"
+
 if "%INCLUDE%" == "" (
     echo vcvarsall.bat environment not found 1>&2
     exit /b 1
